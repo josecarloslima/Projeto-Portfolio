@@ -5,18 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto-Portfólio</title>
 </head>
+
+<!--BODY é a seção onde fica todo o conteúdo-->
 <body>
 
-    <h1>Projeto-Portfólio</h1>
-    <p>Este é o meu Portfólio e Projeto de estudos em desenvolvimento web. Aqui, aos poucos, vou colocar em prática tudo que aprendi nas aulas de tecnologias web. Servindo como estudo de caso, demonstrativo de minhas habilidades e vitrine da minha evolução. Sem mais do que bem vindos ao experimentalismo!</p>
-    <div>
-        <h2>Linha do Tempo</h2>
+    <!--MAIN é uma tag única; define o conteúdo exclusivo da página-->
+    <main>
+
+        <!--HEADER identifica um cabeçalho-->
+        <header>
+            <h1>Projeto-Portfólio</h1>
+        </header>        
+        <p>Este é o meu Portfólio e Projeto de estudos em desenvolvimento web. Aqui, aos poucos, vou colocar em prática tudo que aprendi nas aulas de tecnologias web. Servindo como estudo de caso, demonstrativo de minhas habilidades e vitrine da minha evolução. Sem mais do que bem vindos ao experimentalismo!</p>
+    </main>
+
+    <!--ARTICLE são informações auto-contidas; que fazem sentido sozinhas; parelhas a uma postagem de um blog-->
+    <article>
+
+        <!--SECTION são, genereicamente, as partes do documento-->
+        <section>
+
+            <!--NAV é o menu de navegação do site; pode ser para páginas internas ou externas-->
+            <nav>
+
+                <!--SPAN cria um bloco como a div só que mantém no fluxo do texto; é um pedaço do meu texto que eu quero separar-->
+                <span>
+                    Dados Pessoais
+                </span>
+                <span>
+                    Dados de Contato
+                </span>
+            </nav>           
+        </section>
+    </article>
+
+    <!--SECTION as seções podem identificar bloco usados separadamente-->
+    <section>
+
+        <!--HEADER é o cabeçalho; e ele pode estar em qualquer parte dentro do body-->
+        <header>
+            <h2>Linha do Tempo</h2>
+        </header>
         <p>Para quem quiser acompanhar todas as evuluções do Projeto deixo abaixo o link para o repositório do mesmo no GitHub.</p>
-        <a href="https://github.com/josecarloslima/Projeto-Portfolio">O GitHub do Projeto</a>
+
+        <!--FOOTER é o rodapé; e pode estar inserido em uma seção em que faça sentido semanticamente, ou seja se tem cabeçalho-->
+        <footer>
+            <a href="https://github.com/josecarloslima/Projeto-Portfolio">O GitHub do Projeto</a>
+        </footer>
+    </section>    
+
+    <!--DIV define um bloco de conteúdo; não tem valor semântico-->    
+    <div>
+        <!--ASIDE traz uma informação complementar; não necessariamente ligada ao site; usada para propaganda-->
+        <aside>
+            <article>
+                <header>
+                    <h2>Conheça o Jogo do Herói</h2>
+                </header>
+                <section>
+                    <p>Um serious game sobre o protagonismo cotidiano e os enfrentamentos do dia-a-dia. Baseado nos trabalhos de mitologia comparada do professor estadunidense Joseph Campbell.</p> 
+                </section>
+                <footer>
+                    <a href="http://www.jogodoheroi.com.br/">O Site do Jogo do Herói</a>
+                </footer>
+            </article>
+        </aside>
     </div>
+    
+    <!--HR é uma linha que quebra a estrutura criando uma separação; hr vem de horizontal rules-->
     <hr>
+
+    <!--FOOTER é o rodapé-->
     <footer>
-        <p>Criado por José Carlos Lima - 2023</p>
+        <p>&copy; 2023 - José Carlos Lima</p>
     </footer>
     
 </body>
