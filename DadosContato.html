@@ -11,8 +11,9 @@
         body {
             margin: 1rem;
             background-color: antiquewhite;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-family: serif;
+            line-height: 1.5rem;
         }
 
         main,
@@ -29,6 +30,10 @@
 
         p {
             text-indent: 2rem;
+        }
+
+        .linkLista {
+            display: flex;
         }
 
         h1,
@@ -50,8 +55,9 @@
         }
 
         nav li {
-            display: inline;
-            margin-right: 2rem;
+            display: flex;
+            margin-bottom: auto;
+            margin-right: auto;
         }
 
         nav a {
@@ -90,10 +96,10 @@
                 <a href="index.html">Início</a>
             </li>
             <li>
-                <a href="DadosPessoais.html">Dados Pessoais</a>
+                <a href="DadosPessoais.html">Pessoal</a>
             </li>
             <li>
-                <a href="PerfilProfissional.html">Perfil Profissional</a>
+                <a href="PerfilProfissional.html">Profissional</a>
             </li>
         </ol>
     </nav>
@@ -110,10 +116,10 @@
         <span>
 
             <!--BR /é uma quebra de linha, utilizada para organizar linhas que não estão em parágrafos-->
-            <a href="https://www.linkedin.com/in/josecarloslima1975/">LinkedIn</a> <br />
-            <a href="https://linktr.ee/falabecapod">Fala Beca Podcast</a> <br />
-            <a href="https://jogo-do-heroi-xp.negocio.site/">Facilitação do Jogo do Herói</a> <br />
-            <a href="https://zapbumcrash.blogspot.com/">Zap!Bum!Crash! meu blog sobre quadrinhos</a> <br />
+            <a class="linkLista" href="https://www.linkedin.com/in/josecarloslima1975/">Perfil LinkedIn</a> <br />
+            <a class="linkLista" href="https://linktr.ee/falabecapod">Fala Beca! Podcast</a> <br />
+            <a class="linkLista" href="https://jogo-do-heroi-xp.negocio.site/">Facilitação do Jogo do Herói</a> <br />
+            <a class="linkLista" href="https://zapbumcrash.blogspot.com/">Meu blog sobre quadrinhos: Zap!Bum!Crash!</a> <br />
         </span>
     </section>
 
