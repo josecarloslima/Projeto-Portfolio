@@ -17,37 +17,31 @@
 
         <!--HEADER identifica um cabeçalho-->
         <header>
-            <h1>Portfólio WebDev</h1>
+            <h1 id="nome">José Carlos Lima</h1>
+            <h2 id="cargo">Desenvolvedor Jr.</h2>
         </header>
-        <p>Este é o meu Portfólio e Projeto de estudos em desenvolvimento web. Aqui, aos poucos, vou colocar em prática
-            tudo que aprendi nas aulas de tecnologias web. Servindo como estudo de caso, demonstrativo de minhas
-            habilidades e vitrine da minha evolução. Sem mais, sejam bem-vindos ao experimentalismo!</p>
 
-        <!--FOOTER é o rodapé; e pode estar inserido em uma seção em que faça sentido semanticamente, ou seja se tem cabeçalho-->
-        <footer>
+        <!--NAV é o menu de navegação do site; pode ser para páginas internas ou externas-->
+        <nav class="menu">
+            <!--OL é uma lista ordenada-->
+            <ol>
+                <!--LI é uma lista-->
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+                <li>
+                    <a href="DadosPessoais.html">Pessoal</a>
+                </li>
+                <li>
+                    <a href="PerfilProfissional.html">Profissional</a>
+                </li>
+                <li>
+                    <a href="DadosContato.html">Contato</a>
+                </li>
+            </ol>
+        </nav>
 
-            <!--NAV é o menu de navegação do site; pode ser para páginas internas ou externas-->
-            <nav>
-
-                <!--OL é uma lista ordenada-->
-                <ol>
-
-                    <!--LI é uma lista-->
-                    <li>
-                        <a href="index.html">Início</a>
-                    </li>
-                    <li>
-                        <a href="DadosPessoais.html">Pessoal</a>
-                    </li>
-                    <li>
-                        <a href="PerfilProfissional.html">Profissional</a>
-                    </li>
-                    <li>
-                        <a href="DadosContato.html">Contato</a>
-                    </li>
-                </ol>
-            </nav>
-        </footer>
+        <p>Este é o meu Portfólio e Projeto de estudos em desenvolvimento web. Aqui, aos poucos, vou colocar em prática tudo que aprendi nas aulas de tecnologias web. Servindo como estudo de caso, demonstrativo de minhas habilidades e vitrine da minha evolução. Sem mais, sejam bem-vindos ao experimentalismo!</p>
     </main>
 
     <!--ARTICLE são informações auto-contidas; é um elemento independente que não possui relação direta com a página, mas é auto-explicativo-->
@@ -117,18 +111,21 @@
                     Lucida</a>
             </li>
 
-            <li>Proposta: Sorteador de frases feito em JavaScript, usando para embaralhamento o algoritmo de Fisher-Yates.
+            <li>Proposta: Sorteador de frases feito em JavaScript, usando para embaralhamento o algoritmo de
+                Fisher-Yates.
                 <a class="linkLista" href="https://josecarloslima.github.io/ProjetoSorteadorDeFrases/">Projeto Sorteador
                     de Frases</a>
             </li>
 
-            <li>Proposta: Sorteador de cartas que permite a criação de 27 cartas únicas e sem repetição por maço re-embaralhado. 
+            <li>Proposta: Sorteador de cartas que permite a criação de 27 cartas únicas e sem repetição por maço
+                re-embaralhado.
                 <a class="linkLista" href="https://josecarloslima.github.io/ProjetoSorteadorDeCartas/">Projeto Sorteador
                     de Cartas de Baralho</a>
             </li>
 
             <li>Proposta: Sorteador de cartas de lesão para RPG Gumshoe QuickShock usado em The Yellow King RPG.
-                <a class="linkLista" href="https://josecarloslima.github.io/ProjetoInjuryCardsGumshoe/">Projeto Sorteador
+                <a class="linkLista" href="https://josecarloslima.github.io/ProjetoInjuryCardsGumshoe/">Projeto
+                    Sorteador
                     de Injury Cards</a>
             </li>
         </ul>
@@ -153,9 +150,6 @@
             </article>
         </aside>
     </div>
-
-    <!--HR é uma linha que quebra a estrutura criando uma separação; hr vem de horizontal rules-->
-    <hr>
 
     <!--FOOTER é o rodapé, neste caso da página-->
     <footer id="creditos">

@@ -4,89 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dados de Contato</title>
+    <title>Contato</title>
 
     <!--Aqui vou usar só as regras em tipo style dentro do próprio HTML-->
     <style>
+        /* Layout base */
         body {
-            margin: 1rem;
+            margin: 20px;
             background-color: antiquewhite;
-            font-size: 1.2rem;
-            font-family: serif;
-            line-height: 1.5rem;
-        }
-
-        main,
-        nav,
-        article,
-        section {
-            border-top-left-radius: 1rem;
-            border-bottom-left-radius: 1rem;
-            border-color: antiquewhite;
-            border-style: solid;
-            background-color: rgb(244, 203, 149);
-            padding: 0.5rem 0 0.5rem 0.5rem;
-        }
-
-        p {
-            text-indent: 2rem;
-        }
-
-        .linkLista {
+            font-family: Georgia, 'Times New Roman', Times, serif;
             display: flex;
+            flex-direction: column;
+            padding-right: 50px;
+            padding-left: 50px;
         }
 
-        h1,
-        h2,
-        h3 {
-            background-color: antiquewhite;
-            border-top-left-radius: 1rem;
-            border-bottom-left-radius: 1rem;
-            padding: 0.5rem
-        }
-
-        footer#creditos {
+        #nome {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             text-align: center;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 3rem;
+            letter-spacing: 0.3rem;
         }
 
-        nav ol {
-            list-style-type: none;
-            padding: 0.5rem;
+        #cargo {
+            text-align: center;
+            font-style: italic;
+            font-weight: lighter;
+            letter-spacing: 0.3rem;
         }
 
-        nav li {
-            display: flex;
-            margin-bottom: auto;
-            margin-right: auto;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: rgb(151, 127, 95);
-            font-weight: bold;
-            text-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-            color: rgb(244, 203, 149);
-        }
-
-        nav,
+        /* MENU */
         .menu {
-            background-color: antiquewhite;
-            color: rgb(244, 203, 149);
-            padding: 0rem 0;
-            border-top-left-radius: 1rem;
-            border-bottom-left-radius: 1rem;
+            text-align: center;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .menu::before,
+        .menu::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #333;
+        }
+
+        .menu::before {
+            top: -4px;
+            /* Ajuste conforme necessário para a posição acima do menu */
+        }
+
+        .menu::after {
+            bottom: -4px;
+            /* Ajuste conforme necessário para a posição abaixo do menu */
+        }
+
+        .menu ol {
+            list-style: none;
+            /* Remove os marcadores padrão da lista */
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 20px;
+            /* Adapte conforme necessário para o espaçamento desejado entre os itens */
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
             font-weight: bold;
+            padding: 10px;
+        }
+
+        /*Corpo */
+        h2 {
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+
+        /* Rodapé com Créditos */
+        #creditos {
+            text-align: center;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .creditos::before,
+        .creditos::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #333;
+        }
+
+        .creditos::before {
+            top: -4px;
+            /* Ajuste conforme necessário para a posição acima do menu */
+        }
+
+        .creditos::after {
+            bottom: -4px;
+            /* Ajuste conforme necessário para a posição abaixo do menu */
+        }
+
+        /* Imagem */
+        picture {
+            float: right;
+        }
+
+        picture img {
+            background-color: antiquewhite;
+            border-radius: 15rem;
+            width: 12rem;
         }
     </style>
 </head>
 
 <body>
     <!--NAV é o menu de navegação do site; pode ser para páginas internas ou externas-->
-    <nav>
+    <nav class="menu">
 
         <!--OL é uma lista ordenada-->
         <ol>
@@ -119,7 +168,8 @@
             <a class="linkLista" href="https://www.linkedin.com/in/josecarloslima1975/">Perfil LinkedIn</a> <br />
             <a class="linkLista" href="https://linktr.ee/falabecapod">Fala Beca! Podcast</a> <br />
             <a class="linkLista" href="https://jogo-do-heroi-xp.negocio.site/">Facilitação do Jogo do Herói</a> <br />
-            <a class="linkLista" href="https://zapbumcrash.blogspot.com/">Meu blog sobre quadrinhos: Zap!Bum!Crash!</a> <br />
+            <a class="linkLista" href="https://zapbumcrash.blogspot.com/">Meu blog sobre quadrinhos: Zap!Bum!Crash!</a>
+            <br />
         </span>
     </section>
 
